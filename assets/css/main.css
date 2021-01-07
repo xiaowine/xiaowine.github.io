@@ -1,4 +1,12 @@
 @import url("fontawesome-all.min.css");
+#he-plugin-simple {
+    width: 150px;
+    height: 50px;
+    right: 2vh;
+    top: 5px;
+    float: right;
+}
+
 html,
 body,
 div,
@@ -2969,7 +2977,7 @@ button {
     border-radius: 50px;
     border: none;
     outline: none;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
     color: #fff;
     font-size: 20px;
     letter-spacing: 2px;
@@ -3012,5 +3020,147 @@ button:hover {
     }
     100% {
         background-position: 400%;
+    }
+}
+
+
+/* 大盒子 */
+
+.monfang {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 999;
+    perspective: 1000px;
+    bottom: 0;
+    right: 0;
+    /* 居中 */
+    transform: translate(-80%, -80%);
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* 转换3D */
+    transform-style: preserve-3d;
+    transform: rotateX(-15deg) rotateY(-20deg) translateZ(-100px);
+    /* 设置中心点 */
+    transform-origin: center center -100px;
+    animation: around 5s cubic-bezier(0.94, -0.6, 0.45, 1.31) infinite;
+}
+
+.cube div {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0;
+    position: absolute;
+}
+
+.cube div a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.cube .front {
+    transform: rotateX(0) translateZ(40px);
+    background-color: rgba(0, 191, 255, 0.7);
+}
+
+.cube .back {
+    transform: rotateY(180deg) translateZ(40px);
+    background-color: rgba(124, 252, 0, 0.7);
+}
+
+.cube .left {
+    transform: rotateY(-90deg) translateZ(40px);
+    background-color: rgba(255, 215, 0, 0.7);
+}
+
+.cube .right {
+    transform: rotateY(90deg) translateZ(40px);
+    background-color: rgba(0255, 69, 0, 0.7);
+}
+
+.cube .top {
+    transform: rotateX(90deg) translateZ(40px);
+    background-color: rgba(255, 0, 157, 0.7);
+}
+
+.cube .bottom {
+    transform: rotateX(-90deg) translateZ(40px);
+    background-color: rgba(184, 111, 220, 0.7);
+}
+
+@keyframes around {
+    100% {
+        transform: rotateX(-15deg) rotateY(-380deg) translateZ(-100px);
+    }
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    animation: spin 2s linear infinite;
+}
+
+#loader::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    animation: spin 3s linear infinite;
+}
+
+#loader::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
