@@ -1,4 +1,20 @@
-<thead>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于语言</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <table class="table table-striped table-bordered">
+        <thead>
             <tr class="firstRow">
                 <th>Language语言名</th>
                 <th>ISO-639-1标准简写名</th>
@@ -423,3 +439,7 @@
             </tr>
         </tbody>
     </table>
+
+</body>
+
+</html>
