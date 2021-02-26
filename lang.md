@@ -1,6 +1,7 @@
 |语言|简写  （选择器里需要填的内容）|
 |----|----|
-<body>
+        <tbody>
+
             <tr>
                 <td>Afrikaans</td>
                 <td>af</td>
@@ -418,7 +419,4 @@
                 <td>zu</td>
             </tr>
         </tbody>
-    </table>
-
-</body>
-
+ 
