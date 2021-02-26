@@ -1,7 +1,14 @@
 |语言|简写  （选择器里需要填的内容）|
 |----|----|
-        <tbody>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr class="firstRow">
+                <th>Language语言名</th>
+                <th>ISO-639-1标准简写名</th>
+            </tr>
+        </thead>
 
+        <tbody>
             <tr>
                 <td>Afrikaans</td>
                 <td>af</td>
@@ -419,4 +426,4 @@
                 <td>zu</td>
             </tr>
         </tbody>
- 
+ </table>
