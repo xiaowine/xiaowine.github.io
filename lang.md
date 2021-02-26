@@ -1,4 +1,5 @@
-
+|语言|简写（选择器里需要填的内容）|
+|----|----|
 <body>
     <table class="table table-striped table-bordered">
         <thead>
