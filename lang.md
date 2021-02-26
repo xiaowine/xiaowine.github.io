@@ -1,5 +1,7 @@
 |语言|简写  （选择器里需要填的内容）|
 |----|----|
+
+<boby>
     <table class="table table-striped table-bordered">
         <thead>
             <tr class="firstRow">
@@ -427,3 +429,4 @@
             </tr>
         </tbody>
  </table>
+</boby>
